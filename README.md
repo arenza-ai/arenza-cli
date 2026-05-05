@@ -103,7 +103,7 @@ Get an API token at [app.arenza.ai/settings/api](https://app.arenza.ai/settings/
 - Export it: `export ARENZA_TOKEN=sk_arenza_...`
 - Pass it per-command: `arenza scan stripe.com --token sk_arenza_...`
 
-For multi-tenant CI, prefer OAuth — the Arenza MCP server publishes its OAuth metadata at [`mcp.arenza.ai/.well-known/oauth-authorization-server`](https://mcp.arenza.ai/.well-known/oauth-authorization-server). For OAuth-based programmatic access, see [`arenza-mcp-client`](https://github.com/arenza-ai/arenza-mcp-client-ts).
+For multi-tenant CI, prefer OAuth — the Arenza MCP server publishes its OAuth metadata at [`mcp.arenza.ai/.well-known/oauth-authorization-server`](https://mcp.arenza.ai/.well-known/oauth-authorization-server). For OAuth-based programmatic access, see [`@arenza/mcp-client`](https://github.com/arenza-ai/arenza-mcp-client-ts).
 
 ## Use in CI: fail a build when SoV drops
 
@@ -132,15 +132,15 @@ Pipe the markdown directly into a Slack incoming webhook with `slackcat`, or pos
 
 Most "AI SEO" tools either (a) optimise web copy for crawlers without ever asking an LLM what it actually says about you, or (b) eyeball ChatGPT once and call it research. Arenza measures across all 6 assistants on a fixed cadence, surfaces *specific* wrong claims, and ships measurement-led prescriptions you can verify. This CLI is the easiest way to feel the difference: one command, one domain, real numbers.
 
-If you maintain a marketing agency portfolio, see [the agency dashboard guide](https://arenza.ai/guides/agency-portfolio) — `arenza-cli` is the scriptable cousin of that workflow.
+If you maintain a marketing agency portfolio, see [the agency dashboard guide](https://arenza.ai/guides/agency-portfolio) — `@arenza/cli` is the scriptable cousin of that workflow.
 
 ## Related projects
 
-- [`arenza-mcp-client`](https://github.com/arenza-ai/arenza-mcp-client-ts) — TypeScript client this CLI is built on.
+- [`@arenza/mcp-client`](https://github.com/arenza-ai/arenza-mcp-client-ts) — TypeScript client this CLI is built on.
 - [`arenza-mcp-client-python`](https://github.com/arenza-ai/arenza-mcp-client-python) — Python equivalent.
-- [`arenza-langchain`](https://github.com/arenza-ai/arenza-langchain) — Arenza tools as LangChain tools.
-- [`arenza-llamaindex`](https://github.com/arenza-ai/arenza-llamaindex) — same for LlamaIndex.
-- [`arenza-vercel-ai-sdk`](https://github.com/arenza-ai/arenza-vercel-ai-sdk) — Vercel AI SDK provider.
+- [`@arenza/langchain`](https://github.com/arenza-ai/arenza-langchain) — Arenza tools as LangChain tools.
+- [`@arenza/llamaindex`](https://github.com/arenza-ai/arenza-llamaindex) — same for LlamaIndex.
+- [`@arenza/vercel-ai-sdk`](https://github.com/arenza-ai/arenza-vercel-ai-sdk) — Vercel AI SDK provider.
 - [`arenza-zapier-actions`](https://github.com/arenza-ai/arenza-zapier-actions) — Zapier integration manifest.
 - [awesome-geo](https://github.com/arenza-ai/awesome-geo) — curated list of GEO and AI-visibility resources.
 
