@@ -1,0 +1,61 @@
+{
+  "name": "arenza-cli",
+  "version": "0.1.0",
+  "description": "Command-line interface for Arenza — run a one-shot AI visibility / GEO scan against any public domain and print a markdown report of how ChatGPT, Claude, Gemini, Perplexity, Copilot, and Grok describe the brand.",
+  "keywords": [
+    "arenza",
+    "geo",
+    "generative-engine-optimization",
+    "ai-visibility",
+    "ai-search",
+    "llm-seo",
+    "brand-mention-tracking",
+    "cli",
+    "command-line",
+    "scan",
+    "chatgpt",
+    "claude",
+    "gemini",
+    "perplexity",
+    "copilot",
+    "grok"
+  ],
+  "license": "MIT",
+  "author": "Arenza <hello@arenza.ai> (https://arenza.ai)",
+  "homepage": "https://arenza.ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naiqiao/arenza-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/naiqiao/arenza-cli/issues"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "arenza": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "arenza-mcp-client": "^0.1.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
