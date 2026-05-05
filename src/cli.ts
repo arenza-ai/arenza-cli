@@ -13,7 +13,7 @@
 
 import { Command } from 'commander';
 import chalk from 'chalk';
-import { ArenzaMCPClient } from 'arenza-mcp-client';
+import { ArenzaMCPClient } from '@arenza/mcp-client';
 import { runScan } from './scan.js';
 import { renderMarkdownReport } from './report.js';
 

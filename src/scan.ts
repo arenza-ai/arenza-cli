@@ -8,13 +8,13 @@
  * `renderMarkdownReport()` knows how to format.
  */
 
-import { ArenzaMCPClient } from 'arenza-mcp-client';
+import { ArenzaMCPClient } from '@arenza/mcp-client';
 import type {
   Brand,
   BrandOverview,
   Opportunity,
   Prompt,
-} from 'arenza-mcp-client';
+} from '@arenza/mcp-client';
 
 export interface ScanOptions {
   /** Domain to scan, e.g. "stripe.com". */

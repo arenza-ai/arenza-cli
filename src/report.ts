@@ -7,7 +7,7 @@
  * entry. Numbers always carry units; percentages are 1-decimal.
  */
 
-import type { Opportunity, Prompt } from 'arenza-mcp-client';
+import type { Opportunity, Prompt } from '@arenza/mcp-client';
 import type { ScanResult } from './scan.js';
 
 const LLM_NAMES = [
