@@ -1,5 +1,5 @@
 /**
- * arenza-cli — programmatic entry point.
+* @arenza/cli — programmatic entry point.
  *
  * If you need to embed an Arenza scan inside your own Node program (e.g.
  * a CI step, a dashboard build job, or a Slack bot) without spawning a
