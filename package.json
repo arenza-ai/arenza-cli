@@ -25,10 +25,10 @@
   "homepage": "https://arenza.ai",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/naiqiao/arenza-cli.git"
+    "url": "git+https://github.com/arenza-ai/arenza-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/naiqiao/arenza-cli/issues"
+    "url": "https://github.com/arenza-ai/arenza-cli/issues"
   },
   "type": "module",
   "main": "dist/index.js",
